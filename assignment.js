@@ -37,6 +37,7 @@ function budgetCalculator(watch, mobile, laptop) {
     }
 }
 
+
 //hotelCost
 function hotelCost(days) {
     totalCost = 0;
@@ -73,3 +74,17 @@ function hotelCost(days) {
     }
 }
 
+
+// megaFriend
+function megaFriend(friends) {
+    var largest = friends[0];
+    for (var i = 0; i < friends.length; i++) {
+        var longName = friends[i];
+        if (longName.length > largest.length) {
+            largest = longName;
+        }
+    }
+    return largest;
+}
+var km = megaFriend(["Australia", "Srilanka", "Bangladesh", "Okayhlunifr"]);
+console.log(km);
